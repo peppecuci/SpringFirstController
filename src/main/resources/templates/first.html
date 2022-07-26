@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>First page</title>
+</head>
+<body>
+<h1>BONJOUR, on commence en force avec <span th:text="${message}"></span></h1>
+<ul>
+    <li th:each="info : ${infosRandom}" th:text="${info}"></li>
+</ul>
+</body>
+</html>
