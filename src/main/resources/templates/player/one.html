@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Players</title>
+</head>
+<body>
+<h1>Le jouer selectionné</h1>
+<table>
+    <thead>
+    <th>Nom</th>
+    <th>Numero</th>
+    <th>Poste</th>
+    <th>Salaire</th>
+    <th>Age</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.nbr}"></td>
+        <td th:text="${p.poste}"></td>
+        <td th:text="${p.salary}"></td>
+        <td th:text="${p.age}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
